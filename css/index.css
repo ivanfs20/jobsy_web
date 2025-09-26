@@ -101,9 +101,9 @@
 }
 
 .cardsFuncionalidades .card:hover{
-    transform: translateY(-10px);
     box-shadow: 0 8px 16px #4D7AF3;
 }
+
 
 .cardsFuncionalidades .card h5{
     text-align: center;
