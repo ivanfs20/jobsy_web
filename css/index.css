@@ -1,6 +1,5 @@
 #carouselExampleCaptions {
     width: 100%;
-    background-color: #41A2F3;
 }
 
 #logoJobsy {
@@ -28,7 +27,6 @@
 #frase {
     margin-top: 2%;
     color: #4D7AF3;
-    font-size: 10vh;
     text-align: center;
 }
 
@@ -93,7 +91,7 @@
 }
 
 #navbarFix {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;        
     width: 100%;    
