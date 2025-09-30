@@ -1,0 +1,87 @@
+#carouselExampleCaptions {
+    width: 100%;
+}
+
+#logoJobsy {
+    border-radius: 100%;
+}
+
+#logoJobsy:hover {
+    scale: 1.1;
+}
+
+#containerJobsy {
+    display: flex;
+}
+
+#downloand {
+    width: 70%;
+    background-color: #6eb9f6;
+    padding: 10%;
+    display: flex;
+}
+
+#containerdownload {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#Ventajas div:hover {
+    scale: 1.1;
+}
+
+#playstore:hover button{
+    scale: 1.1;
+    border-color: 10 solid white;
+    color: white;
+    background-color: black;
+}
+
+#navbarFix {
+    position: sticky;
+    top: 0;
+    left: 0;        
+    width: 100%;    
+    z-index: 100;  
+}
+
+.cardsFuncionalidades .card:hover{
+    box-shadow: 0 8px 16px #4D7AF3;
+}
+
+.div_ventajas_images {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    text-align: center;
+}
+
+.div_images_app_cont {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+.div_membresia_content {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.div_membresia_content div{
+    width: 30%;
+}
+
+.div_uso_app {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#div_image_download{
+    display: flex; justify-content: center; width: 150rem;
+}

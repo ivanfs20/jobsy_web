@@ -1,0 +1,15 @@
+.uso_app {
+    width: 50%;
+    height: 400;
+    box-shadow: 0 8px 16px #4D7AF3;
+}
+
+.videosGifsBeneficios{
+    width: 30vh;
+    height: 30vh
+}
+
+.video_modal{
+    width: 100%;
+    height: 315px;
+}

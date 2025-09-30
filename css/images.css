@@ -1,0 +1,61 @@
+.image_carrusel {
+    height: 70vh;
+    object-fit: cover;
+}
+
+.ventajas_images {
+    width: 18rem;
+}
+
+.images_phone_principal {
+    width: 30%;
+    height: auto;
+}
+
+.image_card {
+    width: 18rem;
+}
+
+.contain_image_card {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#logo_jobsy {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+#logo_jobsy:hover {
+    scale: 1.1;
+}
+
+#Ventajas div img{
+    width: auto;
+    height: 15rem;
+}
+
+#containerImagesApp img:hover {
+    scale: 1.1;
+}
+
+#image_download_playstore{
+    width: 40px;
+    height: auto;
+}
+
+#image_download{
+    width: 100%;
+    height: auto;
+    border-radius: 10%; margin: 0 auto;
+}
+
+#button_cont_download{
+    display:flex; justify-content: center; align-items: center; border: none; border-radius: 5px;
+}
+
+.div_cont_button_download{
+display: flex; justify-content: center;
+}

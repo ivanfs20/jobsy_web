@@ -5,25 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOBSY</title>
+    <!--ESTILOS:CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
-
+    <!--FUNCIONALIDAD:JAVASCRIPT-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <!-- Navegacion -->
-
+    <!---->
     <nav class="navbar bg-body-tertiary" id="navbarFix">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html" id="containerJobsy" style="gap: 2rem;">
-                <img src="./src/img/jobsy.jpg" alt="Logo" width="60" height="60" class="d-inline-block align-text-top"
-                    id="logoJobsy">
-                <p class="fw-bolder" id="frase" style="font-size: 2rem;"><strong>JOBSY</strong></p>
+                <img src="./src/img/jobsy.jpg" alt="Logo" class="d-inline-block align-text-top"
+                    id="logo_jobsy">
+                <p class="fw-bolder size_title_navbar" id="frase"><strong>JOBSY</strong></p>
             </a>
             <div class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
@@ -53,10 +52,10 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner" id="imagenesCarrusel">
+        <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://cdn.pixabay.com/photo/2014/02/13/07/28/wordpress-265132_1280.jpg"
-                    class="d-block w-100" alt="..." style="height: 70vh; object-fit: cover;">
+                    class="d-block w-100 image_carrusel" alt="...">
                 <div class=" carousel-caption d-none d-md-block">
                     <h5>PUBLICA</h5>
                     <p>Haz que tus servicios lleguen a mas personas.</p>
@@ -64,15 +63,15 @@
             </div>
             <div class="carousel-item">
                 <img src="https://cdn.pixabay.com/photo/2022/07/17/03/33/hardcore-workers-7326446_1280.jpg"
-                    class="d-block w-100" alt="..." style="height: 70vh; object-fit: cover;">
+                    class="d-block w-100 image_carrusel" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>CONTRATA</h5>
                     <p>Un servicio eficiente en la mejor app.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="https://cdn.pixabay.com/photo/2016/11/29/01/25/adult-1866533_1280.jpg" class="d-block w-100"
-                    alt="..." style="height: 70vh; object-fit: cover;">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/01/25/adult-1866533_1280.jpg" class="d-block w-100 image_carrusel"
+                    alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Promueve</h5>
                     <p>Jobsy impulsa a los proveedores de servicios a llegar a mas personas.</p>
@@ -95,48 +94,48 @@
 
     <!-- Frase para la app -->
 
-    <p class="fw-bolder" id="frase" style="font-size: 12vh;">“Publica o contrata en una sola app”</p>
+    <p class="fw-bolder size_title" id="frase">“Publica o contrata en una sola app”</p>
 
 
     <!-- Submensaje para la app -->
     <p class="fw-bolder" id="subfrase">Con JOBSY, publicar y contratar servicios nunca fue tan fácil</p>
     <!-- Dos imagenes de la app -->
-    <div style="display: flex; justify-content: center; margin: 5%;" id="containerImagesApp">
+    <div class="div_images_app_cont" id="containerImagesApp">
         <!--IMAGEN DE LOGIN-->
         <!---->
-        <img src="./src/img/login.png" alt="Logo" width="30%" height="auto" class="d-inline-block align-text-top">
+        <img src="./src/img/login.png" alt="Logo" class="d-inline-block align-text-top images_phone_principal">
         <!--IMAGEN DE REGISTER-->
-        <img src="./src/img/register.png" alt="Logo" width="30%" height="auto" class="d-inline-block align-text-top">
+        <img src="./src/img/register.png" alt="Logo" class="d-inline-block align-text-top images_phone_principal">
     </div>
 
     <!-- Beneficios -->
 
 
-    <p class="fw-bolder" id="frase" style="font-size: 12vh;">Ventajas</p>
+    <p class="fw-bolder size_title" id="frase">Ventajas</p>
 
-    <div style="display: flex; justify-content: center; gap: 3%; text-align: center;" id="Ventajas">
-        <div class="card" style="width: 18rem;">
+    <div class="div_ventajas_images" id="Ventajas">
+        <div class="card ventajas_images">
             <img src="https://cdn.pixabay.com/photo/2022/01/20/17/51/office-desk-6952919_1280.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">Más accesible para proveedores pequeños (Costos mas bajos).</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card ventajas_images">
             <img src="https://cdn.pixabay.com/photo/2017/09/05/17/05/digital-marketing-2718413_1280.jpg"
                 class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Más moderno y usable.</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card ventajas_images">
             <img src="https://cdn.pixabay.com/photo/2015/05/15/01/48/computer-767776_1280.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
                 <p class="card-text">Modelo de negocio claro y flexible.</p>
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card ventajas_images">
             <img src="https://cdn.pixabay.com/photo/2015/08/08/20/52/fishermen-880801_1280.jpg" class="card-img-top"
                 alt="...">
             <div class="card-body">
@@ -151,7 +150,7 @@
     <div style="display: flex; justify-content: center; gap: 15px; margin-top: 5%; margin-bottom: 5%; flex-wrap: wrap;">
 
         <div style="width: 30%;">
-            <p class="fw-bolder" id="beneficiosTitles" style="font-size: 5vh;">BOOTS</p>
+            <p class="fw-bolder title_membresias_size" id="beneficiosTitles">BOOTS</p>
             <div style="display: flex; justify-content: center; width: auto;">
                 <video src="./src/video/lanzamiento.mp4" autoplay loop class="videosGifsBeneficios"
                     width="100%"></video>
@@ -166,7 +165,7 @@
         </div>
 
         <div style="width: 30%;">
-            <p class="fw-bolder" id="beneficiosTitles" style="font-size: 5vh;">SUSCRIPCIÓN</p>
+            <p class="fw-bolder title_membresias_size" id="beneficiosTitles">SUSCRIPCIÓN</p>
             <div style="display: flex; justify-content: center;">
                 <video src="./src/video/suscripcion.mp4" autoplay loop class="videosGifsBeneficios"
                     width="100%"></video>
@@ -188,8 +187,8 @@
 
 
     <!-- Video del uso de la app -->
-    <div style="display: flex; justify-content: center; margin-bottom: 5%;" id="demo">
-        <video width="50%" height="400" controls muted loop style="box-shadow: 0 8px 16px #4D7AF3;">
+    <div class="div_uso_app" id="demo">
+        <video class="uso_app" controls>
             <source src="./src/video/video.mp4" type="video/mp4">
             Tu navegador no soporta la etiqueta de video.
         </video>
@@ -198,37 +197,11 @@
 
 
     <!-- Caracteristicas clave con imagenes -->
+    <p class="fw-bolder size_title" id="frase">Funcionalidades</p>
 
-    <!--Imagenes de pantalla de la aplicacion en modo de carrusel con cards
-    Ejemplo:
-
-
-    Captura
-    Descipcion: Publica tu servicio de manera facil y sencilla
-
-
-    Captura
-    Descripcion: Impulsa tu servicio a un bajo costo
-
-    Captura
-    Descripcion: Elije el rango de ubicación
-
-    Captura
-    Descripcion: Añade a favoritos los servicios de tu agrado
-
-    Captura
-    Dexcripcion: Comparte la opinion sobre tu experiencia
-
-
-
-    La card va a ser con boton, que va a abrir el modal donde se mostrara un pequeño video de guia en el cual se le explica la funcion de esa
-    caracteristica al usuario y solo un boton de cerrar
-    -->
-    <p class="fw-bolder" id="frase" style="font-size: 12vh;">Funcionalidades</p>
-
-    <div style="display: flex;justify-content: center; gap: 2rem;" class="cardsFuncionalidades" id="funcionalidades">
+    <div class="cardsFuncionalidades contain_image_card" id="funcionalidades">
         <!--Comentar un servicio-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/comentar.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Comentar un servicio</h5>
@@ -249,7 +222,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <video src="./src/video/comentar.mkv" controls width="100%" height="315"></video>
+                                <video src="./src/video/comentar.mkv" controls class="video_modal"></video>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -260,7 +233,7 @@
             </div>
         </div>
         <!--Consultar y editar perfil-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/perfil.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Consultar y editar perfil</h5>
@@ -281,7 +254,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <video src="./src/video/perfil.mkv" controls width="100%" height="315"></video>
+                                <video src="./src/video/perfil.mkv" controls class="video_modal"></video>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -292,7 +265,7 @@
             </div>
         </div>
         <!--Cambiar tema de la aplicacion-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/tema.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Cambiar tema de la app</h5>
@@ -313,7 +286,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <video src="./src/video/tema.mkv" controls width="100%" height="315"></video>
+                                <video src="./src/video/tema.mkv" controls class="video_modal"></video>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -324,7 +297,7 @@
             </div>
         </div>
         <!--Indicar el rango de servicios-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/rango.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Seleccionar rango de servicios</h5>
@@ -345,7 +318,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <video src="./src/video/rango.mkv" controls width="100%" height="315"></video>
+                                <video src="./src/video/rango.mkv" controls class="video_modal"></video>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -358,10 +331,10 @@
     </div>
 
 
-    <div style="display: flex;justify-content: center; gap: 2rem; margin-top: 2rem; margin-bottom: 2rem;"
-        class="cardsFuncionalidades">
+    <div style="margin-top: 2rem; margin-bottom: 2rem;"
+        class="cardsFuncionalidades contain_image_card">
         <!--REGISTRARSE-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/register.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Registrarse</h5>
@@ -382,7 +355,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <video src="./src/video/registrar.mkv" controls width="100%" height="315"></video>
+                                <video src="./src/video/registrar.mkv" controls class="video_modal"></video>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -393,7 +366,7 @@
             </div>
         </div>
         <!--LOGEARSE-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/login.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Iniciar sesión</h5>
@@ -414,7 +387,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <video src="./src/video/login.mkv" controls width="100%" height="315"></video>
+                                <video src="./src/video/login.mkv" controls class="video_modal"></video>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -426,7 +399,7 @@
         </div>
 
         <!--Publicar un servicio-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/publicar.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Publicar un servicio</h5>
@@ -460,7 +433,7 @@
             </div>
         </div>
         <!--Añadir a favoritos un servicio-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/favoritos.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Añadir a favoritos un servicio</h5>
@@ -481,7 +454,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <video src="./src/video/favorito.mkv" controls width="100%" height="315"></video>
+                                <video src="./src/video/favorito.mkv" controls class="video_modal"></video>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -493,9 +466,9 @@
         </div>
     </div>
 
-    <div style="display: flex;justify-content: center; gap: 2rem;" class="cardsFuncionalidades">
+    <div class="cardsFuncionalidades contain_image_card">
         <!--Buscar un servicio por nombre-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/buscar.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Buscar un servicio</h5>
@@ -516,7 +489,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <video src="./src/video/buscar.mkv" controls width="100%" height="315"></video>
+                                <video src="./src/video/buscar.mkv" controls class="video_modal"></video>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -527,7 +500,7 @@
             </div>
         </div>
         <!--Promocionar el servicio-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/promocionar.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Promocionar un servicio</h5>
@@ -560,7 +533,7 @@
             </div>
         </div>
         <!--Adquirir premium-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/premium.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Adquirir premium</h5>
@@ -594,7 +567,7 @@
         </div>
 
         <!--Proximamente-->
-        <div class="card" style="width: 18rem;">
+        <div class="card image_card">
             <img src="./src/img/proximamente.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Proximamente</h5>
@@ -630,7 +603,7 @@
 
 
 
-    <p class="fw-bolder" id="frase" style="font-size: 12vh;">Descarga</p>
+    <p class="fw-bolder size_title" id="frase">Descarga</p>
 
 
     <!-- Botones de descarga en la play store -->
@@ -642,15 +615,15 @@
                     <p class="fw-bolder" id="titleDownload" style="font-size: 3rem;"><strong>DOWNLOAD THIS APP</strong>
                     </p>
                     <p
-                        style="margin-top: 2%; margin-bottom: 5%; text-align: justify; margin-bottom: 2rem; color: white;">
+                        id="text_description_app">
                         JOBSY es una aplicación móvil diseñada para facilitar la conexión entre personas que necesitan
                         servicios técnicos o profesionales y aquellos que los ofrecen.
                         Descargala ahora y disfruta de todos sus Beneficios
                     </p>
-                    <div style="display: flex; justify-content: center;" id="playstore">
-                        <button
-                            style="display:flex; justify-content: center; align-items: center; border: none; border-radius: 5px;">
-                            <img src="./src/img/playstore.png" alt="Logo" width="40" height="auto"
+                    <div class="div_cont_button_download" id="playstore">
+                        <button id="button_cont_download"
+                            >
+                            <img src="./src/img/playstore.png" alt="Logo" id="image_download_playstore"
                                 class="d-inline-block align-text-top">
                             <a class="navbar-brand"
                                 href="https://play.google.com/store/apps/details?id=org.geogebra.android.calculator.suite&pcampaignid=web_share">
@@ -658,9 +631,8 @@
                             </a> </button>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: center; width: 150rem;">
-                    <img src="./src/img/download.png" alt="Logo" width="100%" height="auto"
-                        style="border-radius: 10%; margin: 0 auto;">
+                <div id="div_image_download">
+                    <img src="./src/img/download.png" alt="Logo" id="image_download">
                 </div>
             </div>
         </div>

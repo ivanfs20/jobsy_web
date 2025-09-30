@@ -1,0 +1,57 @@
+#titleJobsy {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.size_title {
+    font-size: 12vh;
+}
+
+.size_title_navbar{
+    font-size: 2rem;
+}
+
+
+#beneficiosTitles {
+    margin-top: 2%;
+    color: #4D7AF3;
+    text-align: center;
+}
+
+
+#titleDownload {
+    margin-top: 2%;
+    color: #ffffff;
+    font-size: 10vh;
+    text-align: center;
+}
+
+#subfrase {
+    color: #5f86f3;
+    font-size: 3vh;
+    text-align: center;
+}
+
+.cardsFuncionalidades .card h5{
+    text-align: center;
+}
+
+
+.cardsFuncionalidades .card p{
+    text-align: justify;
+}
+
+#frase {
+    margin-top: 2%;
+    color: #4D7AF3;
+    text-align: center;
+}
+
+#text_description_app{
+    margin-top: 2%; margin-bottom: 5%; text-align: justify; margin-bottom: 2rem; color: white;
+}
+
+.title_membresias_size{
+font-size: 5vh;
+}
