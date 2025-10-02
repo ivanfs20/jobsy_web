@@ -1,25 +1,28 @@
+/*ESTILOS DEL TITULO DE LA APP (SECCION NAVBAR)*/
 #titleJobsy {
     justify-content: center;
     text-align: center;
     align-items: center;
 }
 
+/*ESTILOS DEL TAMAÑO DE LETRA DE LOS TITULOS DE CADA SECCION*/
 .size_title {
     font-size: 12vh;
 }
 
-.size_title_navbar{
+/*ESTILOS DEL TAMAÑO DE LETRA DEL NAVBAR*/
+.size_title_navbar {
     font-size: 2rem;
 }
 
-
+/*ESTILOS DE LOS TITULOS EN LA SECCION DE BENEFICIOS - MEM BRESIA*/
 #beneficiosTitles {
     margin-top: 2%;
     color: #4D7AF3;
     text-align: center;
 }
 
-
+/*ESTILOS DEL TITULO PRINCIPAL DE DOWNLOAD*/
 #titleDownload {
     margin-top: 2%;
     color: #ffffff;
@@ -27,31 +30,40 @@
     text-align: center;
 }
 
+/*ESTILOS DE LA SUBFRASE DE LA APP*/
 #subfrase {
     color: #5f86f3;
     font-size: 3vh;
     text-align: center;
 }
 
-.cardsFuncionalidades .card h5{
+/*ESTILOS DE LOS TITULOS (H5) DE LAS CARD'S DE FUNCIONALIDADES*/
+.cardsFuncionalidades .card h5 {
     text-align: center;
 }
 
-
-.cardsFuncionalidades .card p{
+/*ESTILOS DE LAS DESCRIPCIONES DE LAS CARD'S DE FUNCIONALIDADES*/
+.cardsFuncionalidades .card p {
     text-align: justify;
 }
 
+/*ESTILOS DE LA FRASE PRINCIPAL*/
 #frase {
     margin-top: 2%;
     color: #4D7AF3;
     text-align: center;
 }
 
-#text_description_app{
-    margin-top: 2%; margin-bottom: 5%; text-align: justify; margin-bottom: 2rem; color: white;
+/*ESTILOS DE LA DESCRIPCION DE LA APP - DOWNLOAD*/
+#text_description_app {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: justify;
+    margin-bottom: 2rem;
+    color: white;
 }
 
-.title_membresias_size{
-font-size: 5vh;
+/*ESTILOS DE LOS TITULOS DE MEMBRESIA*/
+.title_membresias_size {
+    font-size: 5vh;
 }

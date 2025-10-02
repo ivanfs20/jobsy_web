@@ -1,13 +1,26 @@
+/*
+    VIDEO DE PRESENTACIÓN DE LA APP
+*/
+
 .uso_app {
     width: 50%;
     height: 400;
     box-shadow: 0 8px 16px #4D7AF3;
 }
 
+/*
+    VIDEOS DE LA SECCION DE -> BENEFICIOS DE LA APP
+*/
+
 .videosGifsBeneficios{
     width: 30vh;
     height: 30vh
 }
+
+
+/*
+    VIDEOS DE LA SECCIÓN DE -> MODALES (VIDEOS DEMOSTRATIVOS DE LAS FUNCIONALIDADES DE LA APP)
+*/
 
 .video_modal{
     width: 100%;

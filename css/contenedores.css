@@ -1,19 +1,24 @@
+/*CONTENEDOR DE IMAGE CARRUSEL - SIZE*/
 #carouselExampleCaptions {
     width: 100%;
 }
 
+/*CONTENEDOR DEL LOGO*/
 #logoJobsy {
     border-radius: 100%;
 }
 
+/*HOVER DEL LOGO*/
 #logoJobsy:hover {
     scale: 1.1;
 }
 
+/*CONTENEDOR DE IMAGE AND TITLE DEL LOGO*/
 #containerJobsy {
     display: flex;
 }
 
+/*CONTENEDOR DOWNLOAD*/
 #downloand {
     width: 70%;
     background-color: #6eb9f6;
@@ -21,35 +26,41 @@
     display: flex;
 }
 
+/*CONTENEDOR DE LA SECCION GENERAL DE DOWNLOAD*/
 #containerdownload {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
+/*HOVER DEL CONTENEDOR DE VENTAJAS*/
 #Ventajas div:hover {
     scale: 1.1;
 }
 
-#playstore:hover button{
+/*HOVER DEL CONTENEDOR DEL BOTON DE LA IMAGEN PLAY STORE*/
+#playstore:hover button {
     scale: 1.1;
     border-color: 10 solid white;
     color: white;
     background-color: black;
 }
 
+/*CONTENEDOR DEL NAVBAR PARA PONERLO FIJO*/
 #navbarFix {
     position: sticky;
     top: 0;
-    left: 0;        
-    width: 100%;    
-    z-index: 100;  
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
-.cardsFuncionalidades .card:hover{
+/*HOVER DEL CONTENEDOR (CARD) DE FUNCIONALIDADES*/
+.cardsFuncionalidades .card:hover {
     box-shadow: 0 8px 16px #4D7AF3;
 }
 
+/*CONTENEDOR DE LAS IMAGENES DE VENTAJA*/
 .div_ventajas_images {
     display: flex;
     justify-content: center;
@@ -57,12 +68,14 @@
     text-align: center;
 }
 
+/*CONTENEDOR DE LAS IMAGENES DE LA APP (LOGIN AND REGISTER)*/
 .div_images_app_cont {
     display: flex;
     justify-content: center;
     margin: 5%;
 }
 
+/*CONTENEDOR GENERAL DE LA SECCION DE LA MEMBRESIA*/
 .div_membresia_content {
     display: flex;
     justify-content: center;
@@ -72,16 +85,43 @@
     flex-wrap: wrap;
 }
 
-.div_membresia_content div{
+/*CONTENEDOR DE LA SECCION DE LA MEMBRESIA - POR SEPARADO*/
+.div_membresia_content div {
     width: 30%;
 }
 
+/*CONTENEDOR DEL VIDEO DE LA SECCION DE LA PRESENTACIÓN DEL VIDEO*/
 .div_uso_app {
     display: flex;
     justify-content: center;
     margin-bottom: 5%;
 }
 
-#div_image_download{
-    display: flex; justify-content: center; width: 150rem;
+/*CONTENEDOR DE IMAGEN DE LA SECCION DE DESCARGAS*/
+#div_image_download {
+    display: flex;
+    justify-content: center;
+    width: 150rem;
+}
+
+/*CONTENEDOR DE IMAGEN DE LA SECCION DE FUNCIONALIDADES*/
+.contain_image_card {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/*CONTENEDOR DE LA SECCION IMAGE DOWNLOAD*/
+#button_cont_download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+}
+
+/*CONTENEDOR DE LA SECCION DEL BUTTON DE DOWNLOAD*/
+.div_cont_button_download {
+    display: flex;
+    justify-content: center;
 }
