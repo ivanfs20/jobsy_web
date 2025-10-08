@@ -20,10 +20,25 @@
 
 /*CONTENEDOR DOWNLOAD*/
 #downloand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
     width: 70%;
     background-color: #6eb9f6;
-    padding: 10%;
-    display: flex;
+    padding: 2rem 1rem;
+}
+
+#downloand img{
+      max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#downloand > div {
+  flex: 1 1 300px; 
+  text-align: center;
 }
 
 /*CONTENEDOR DE LA SECCION GENERAL DE DOWNLOAD*/

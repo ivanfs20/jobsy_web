@@ -3,18 +3,20 @@
 */
 
 .uso_app {
-    width: 50%;
-    height: 400;
-    box-shadow: 0 8px 16px #4D7AF3;
+  width: 50%;
+  height: auto;
+  max-width: 600px;
+  box-shadow: 0 8px 16px #4D7AF3;
 }
 
 /*
     VIDEOS DE LA SECCION DE -> BENEFICIOS DE LA APP
 */
 
-.videosGifsBeneficios{
-    width: 30vh;
-    height: 30vh
+.videosGifsBeneficios {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
 }
 
 
@@ -22,7 +24,8 @@
     VIDEOS DE LA SECCIÓN DE -> MODALES (VIDEOS DEMOSTRATIVOS DE LAS FUNCIONALIDADES DE LA APP)
 */
 
-.video_modal{
-    width: 100%;
-    height: 315px;
+.video_modal {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
 }

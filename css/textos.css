@@ -7,12 +7,12 @@
 
 /*ESTILOS DEL TAMAÑO DE LETRA DE LOS TITULOS DE CADA SECCION*/
 .size_title {
-    font-size: 12vh;
+    font-size: clamp(1.8rem, 5vw, 4rem);
 }
 
 /*ESTILOS DEL TAMAÑO DE LETRA DEL NAVBAR*/
 .size_title_navbar {
-    font-size: 2rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 /*ESTILOS DE LOS TITULOS EN LA SECCION DE BENEFICIOS - MEM BRESIA*/
@@ -24,10 +24,11 @@
 
 /*ESTILOS DEL TITULO PRINCIPAL DE DOWNLOAD*/
 #titleDownload {
-    margin-top: 2%;
-    color: #ffffff;
-    font-size: 10vh;
-    text-align: center;
+      margin-top: 2%;
+  color: #ffffff;
+  text-align: center;
+  font-size: clamp(1.8rem, 6vw, 3.5rem);
+  word-wrap: break-word;
 }
 
 /*ESTILOS DE LA SUBFRASE DE LA APP*/
@@ -61,9 +62,10 @@
     text-align: justify;
     margin-bottom: 2rem;
     color: white;
+    padding: 0 1rem;
 }
 
 /*ESTILOS DE LOS TITULOS DE MEMBRESIA*/
 .title_membresias_size {
-    font-size: 5vh;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
