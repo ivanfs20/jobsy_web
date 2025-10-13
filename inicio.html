@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOBSY - Inicio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!--NAVEGADOR-->
+    <div id="navbar"></div>
+    <!--CARRUSEL EN UNA CARD CON PUNTAS REDONDEADAS-->
+    <div class="card shadow rounded-4 mb-5 mx-4 my-4" style="overflow: hidden">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://cdn.pixabay.com/photo/2014/02/13/07/28/wordpress-265132_1280.jpg"
+              class="d-block w-100 image_carrusel"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>PUBLICA</h5>
+              <p>Haz que tus servicios lleguen a mas personas.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2022/07/17/03/33/hardcore-workers-7326446_1280.jpg"
+              class="d-block w-100 image_carrusel"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>CONTRATA</h5>
+              <p>Un servicio eficiente en la mejor app.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/11/29/01/25/adult-1866533_1280.jpg"
+              class="d-block w-100 image_carrusel"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Promueve</h5>
+              <p>
+                Jobsy impulsa a los proveedores de servicios a llegar a mas
+                personas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!--FRASE PARA LA APP-->
+    <p class="fw-bolder size_title" id="frase">
+      “Publica o contrata en una sola app”
+    </p>
+
+    <!--SUBMENSAJE PARA LA APP-->
+    <p class="fw-bolder" id="subfrase">
+      Con JOBSY, publicar y contratar servicios nunca fue tan fácil
+    </p>
+    <!--IMAGENES REPRESENTATIVAS DE LA APP-->
+    <div class="div_images_app_cont" id="containerImagesApp">
+      <img
+        src="./src/img/login.png"
+        alt="Logo"
+        class="d-inline-block align-text-top images_phone_principal"
+      />
+      <img
+        src="./src/img/register.png"
+        alt="Logo"
+        class="d-inline-block align-text-top images_phone_principal"
+      />
+    </div>
+
+    <!--VIDEO DEL USO DE LA APP-->
+    <div class="card shadow rounded-4 mb-5 mx-4 my-4" style="overflow: hidden">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-6">
+          <div class="p-5">
+            <h3 class="fw-bold mb-3">¿Cómo funciona JOBSY?</h3>
+            <p>
+              Descubre cómo puedes publicar y contratar servicios fácilmente con
+              nuestra aplicación. Mira el video para conocer todas las
+              funcionalidades y ventajas que JOBSY tiene para ti.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="p-3">
+            <video class="uso_app w-100 video-hover" controls>
+              <source src="./src/video/video.mp4" type="video/mp4" />
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="fw-bolder size_title" id="frase">Descarga</p>
+    <!--SECCION DE DESCARGA DE LA APP EN UNA CARD-->
+    <div class="card shadow rounded-4 mb-5 mx-4 my-4" style="overflow: hidden;">
+      <div id="containerdownload">
+        <div id="downloand">
+          <div>
+            <p class="fw-bolder" id="titleDownload" style="font-size: 3rem">
+              <strong>DESCARGA JOBSY</strong>
+            </p>
+            <p id="text_description_app">
+              JOBSY es una aplicación móvil diseñada para facilitar la conexión
+              entre personas que necesitan servicios técnicos o profesionales y
+              aquellos que los ofrecen. Descargala ahora y disfruta de todos sus
+              Beneficios
+            </p>
+            <div class="div_cont_button_download" id="playstore">
+              <button id="button_cont_download">
+                <img
+                  src="./src/img/playstore.png"
+                  alt="Logo"
+                  id="image_download_playstore"
+                  class="d-inline-block align-text-top"
+                />
+                <a
+                  class="navbar-brand"
+                  href="https://play.google.com/store/apps/details?id=org.geogebra.android.calculator.suite&pcampaignid=web_share"
+                  >Play Store</a
+                >
+              </button>
+            </div>
+          </div>
+          <div id="div_image_download">
+            <img src="./src/img/download.png" alt="Logo" id="image_download" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <video src="https://youtu.be/VYtJAuoZxcc?list=RDP8_qEf14bGg"></video>
+      </div>
+    </div>
+    <script>
+      // Cargar navbar.html dinámicamente
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("navbar").innerHTML = html;
+        });
+      // Cargar footer.html dinámicamente
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
+    <div id="footer"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .video-hover:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+        box-shadow: 0 8px 24px #0ba2ff33;
+      }
+    </style>
+  </body>
+</html>

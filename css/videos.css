@@ -25,7 +25,10 @@
 */
 
 .video_modal {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  max-width: 900px;
+  height: 500px !important;
+  margin: 0 auto;
+  display: block;
   aspect-ratio: 16 / 9;
 }

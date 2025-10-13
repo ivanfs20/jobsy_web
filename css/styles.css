@@ -1,0 +1,89 @@
+/* Estilos personalizados para el navbar principal */
+#navbarFix {
+    background: #fff;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 0 10px 12px rgba(77, 122, 243, 0.15);
+    overflow: hidden;
+    padding: 0.5rem 2rem;
+    min-height: 70px;
+}
+
+#containerJobsy {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.size_title_navbar {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    text-align: left;
+    margin: 0;
+    color: #5fc4ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#logo_jobsy {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.navbar-nav {
+    gap: 1rem;
+}
+
+.nav-link {
+    color: #006696 !important;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #57bcff !important;
+}
+
+.card-beneficio {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-beneficio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 32px #0ba2ff33;
+    z-index: 2;
+}
+
+.card-beneficio-title {
+    font-size: 2rem;
+    color: #0ba2ff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.card-beneficio-desc {
+    font-size: 1.05rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.beneficio-list {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.08rem;
+    line-height: 2.1;
+    letter-spacing: 0.5px;
+}
+
+.beneficio-list strong {
+    color: #0ba2ff;
+    font-weight: bold;
+}
+
+.beneficio-list .icono {
+    font-size: 1.2em;
+    margin-right: 0.3em;
+}
