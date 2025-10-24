@@ -8,24 +8,30 @@
 /*ESTILOS DEL TAMAÑO DE LETRA DE LOS TITULOS DE CADA SECCION*/
 .size_title {
     font-size: clamp(1.8rem, 5vw, 4rem);
+    color: rgb(63, 201, 255);
 }
 
 /*ESTILOS DEL TAMAÑO DE LETRA DEL NAVBAR*/
 .size_title_navbar {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
+    text-align: left;
+    margin: 0;
+    color: #44caff;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 /*ESTILOS DE LOS TITULOS EN LA SECCION DE BENEFICIOS - MEM BRESIA*/
 #beneficiosTitles {
     margin-top: 2%;
-    color: #4D7AF3;
+    color: #77ebff;
     text-align: center;
 }
 
 /*ESTILOS DEL TITULO PRINCIPAL DE DOWNLOAD*/
 #titleDownload {
       margin-top: 2%;
-  color: #ffffff;
+  color: #44caff;
   text-align: center;
   font-size: clamp(1.8rem, 6vw, 3.5rem);
   word-wrap: break-word;
@@ -33,7 +39,7 @@
 
 /*ESTILOS DE LA SUBFRASE DE LA APP*/
 #subfrase {
-    color: #5f86f3;
+    color: #4aaeff;
     font-size: 3vh;
     text-align: center;
 }
@@ -51,7 +57,7 @@
 /*ESTILOS DE LA FRASE PRINCIPAL*/
 #frase {
     margin-top: 2%;
-    color: #4D7AF3;
+    color: #4aaeff;
     text-align: center;
 }
 
@@ -61,11 +67,27 @@
     margin-bottom: 5%;
     text-align: justify;
     margin-bottom: 2rem;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 0 1rem;
 }
 
 /*ESTILOS DE LOS TITULOS DE MEMBRESIA*/
 .title_membresias_size {
     font-size: clamp(1.2rem, 3vw, 2.5rem);
+}
+
+/*ESTILOS DEL NAVBAR*/
+#navbarFix {
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    box-shadow: 0 2px 8px rgba(77, 122, 243, 0.15);
+    overflow: hidden;
+}
+
+/*ALINEAR EL CONTENIDO DEL NAVBAR*/
+#containerJobsy {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: auto;
 }
