@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Solo aplica a elementos dentro de body, NO al navbar */
+body > * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #f0f4ff 100%);
+    overflow-x: hidden;
+}
+
+/* Proteger navbar de los estilos de inicio */
+#navbar,
+#navbar * {
+    font-family: 'Montserrat', sans-serif;
+    /* No sobrescribir estilos del navbar */
+}
+
+/* ===== CARRUSEL MEJORADO ===== */
+.carousel-section {
+    margin: 2rem 1rem;
+}
+
+.carousel-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(64, 160, 241, 0.15);
+    transition: all 0.3s ease;
+}
+
+.carousel-card:hover {
+    box-shadow: 0 16px 48px rgba(64, 160, 241, 0.25);
+    transform: translateY(-4px);
+}
+
+.image_carrusel {
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item:hover .image_carrusel {
+    transform: scale(1.05);
+}
+
+.carousel-caption {
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+    padding: 2rem 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(64, 160, 241, 0.3);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(64, 160, 241, 0.6);
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(64, 160, 241, 0.5);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background: linear-gradient(135deg, #40a0f1, #12b2f0);
+    box-shadow: 0 0 10px rgba(64, 160, 241, 0.5);
+}
+
+/* ===== CONOCE JOBSY SECTION ===== */
+.conoce-section {
+    margin: 3rem 1rem;
+}
+
+.conoce-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(64, 160, 241, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(64, 160, 241, 0.1);
+    transition: all 0.3s ease;
+}
+
+.conoce-card:hover {
+    box-shadow: 0 16px 48px rgba(64, 160, 241, 0.2);
+    transform: translateY(-4px);
+    border-color: rgba(64, 160, 241, 0.4);
+}
+
+.conoce-card .conoce-content {
+    padding: 3rem;
+}
+
+.conoce-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #40a0f1 0%, #12b2f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.conoce-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem;
+}
+
+.uso_app {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(64, 160, 241, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.uso_app:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 36px rgba(18, 178, 240, 0.3);
+}
+
+/* ===== SLOGAN SECTION ===== */
+.slogan-section {
+    margin: 4rem 1rem 2rem;
+    text-align: center;
+}
+
+.slogan-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    background: linear-gradient(135deg, #40a0f1 0%, #12b2f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(64, 160, 241, 0.1);
+}
+
+.slogan-subtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+/* ===== GALERÍA DE IMÁGENES ===== */
+.gallery-section {
+    margin: 3rem 1rem;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.phone-image {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 12px 40px rgba(64, 160, 241, 0.25);
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+.phone-image:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 60px rgba(18, 178, 240, 0.35);
+}
+
+@media (max-width: 768px) {
+    .phone-image {
+        width: 150px;
+    }
+
+    .gallery-container {
+        gap: 1rem;
+    }
+}
+
+/* ===== DESCARGA SECTION ===== */
+.download-section {
+    margin: 3rem 1rem;
+}
+
+.download-card {
+    background: linear-gradient(135deg, rgba(64, 160, 241, 0.1) 0%, rgba(18, 178, 240, 0.05) 100%);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(64, 160, 241, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(64, 160, 241, 0.1);
+}
+
+.download-content {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.download-text h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: #12b2f0;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.download-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.download-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#image_download {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+#image_download:hover {
+    transform: scale(1.05);
+}
+
+.button-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(135deg, #40a0f1 0%, #12b2f0 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(64, 160, 241, 0.3);
+    text-decoration: none;
+}
+
+.button-download:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(18, 178, 240, 0.4);
+    background: linear-gradient(135deg, #12b2f0 0%, #40a0f1 100%);
+}
+
+.button-download:active {
+    transform: translateY(-1px);
+}
+
+#image_download_playstore {
+    width: 30px;
+    height: 30px;
+}
+
+/* Asegurar que #frase solo se aplique en esta página, NO en navbar */
+.carousel-section + .conoce-section #frase,
+section #frase {
+    /* Solo cuando está en secciones de contenido */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .download-content {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .conoce-title {
+        font-size: 2rem;
+    }
+
+    .slogan-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .image_carrusel {
+        height: 250px;
+    }
+
+    .carousel-caption {
+        padding: 1.5rem 1rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .conoce-card .conoce-content {
+        padding: 1.5rem;
+    }
+
+    .conoce-text {
+        font-size: 1rem;
+    }
+
+    .download-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .video-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image_carrusel {
+        height: 200px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.85rem;
+    }
+
+    .slogan-title {
+        font-size: 1.8rem;
+    }
+
+    .slogan-subtitle {
+        font-size: 1rem;
+    }
+
+    .gallery-container {
+        gap: 0.5rem;
+    }
+
+    .phone-image {
+        width: 120px;
+    }
+
+    .download-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .download-text p {
+        font-size: 0.95rem;
+    }
+
+    .button-download {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}

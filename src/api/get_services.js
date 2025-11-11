@@ -22,21 +22,28 @@ async function loadServices(query = '') {
                 container.appendChild(serviceCard);
             });
         } else {
-            container.innerHTML = '<p class="text-center col-12">No hay servicios disponibles.</p>';
+            container.innerHTML = `
+                <div class="no-services">
+                    <h2>No hay servicios disponibles</h2>
+                    <p>Intenta buscar con otros términos</p>
+                </div>
+            `;
         }
     } catch (error) {
         console.error('Error al cargar servicios:', error);
-        document.getElementById('servicesContainer').innerHTML = 
-            '<p class="text-center col-12 text-danger">Error al cargar los servicios.</p>';
+        document.getElementById('servicesContainer').innerHTML = `
+            <div class="no-services">
+                <h2>Error al cargar servicios</h2>
+                <p>Por favor, intenta más tarde</p>
+            </div>
+        `;
     }
 }
 
 function createServiceCard(service) {
-    const col = document.createElement('div');
-    col.className = 'col-md-6 col-lg-4 mb-4';
-    
+    // SIN div.col - directamente la card
     const card = document.createElement('div');
-    card.className = 'card service-card shadow rounded-4 h-100';
+    card.className = 'service-card';
     if (service.isPromoted) {
         card.classList.add('promoted-card');
     }
@@ -55,7 +62,7 @@ function createServiceCard(service) {
             </div>
         </div>
         <div class="card-body">
-            <h6 class="card-title fw-bold text-primary">${service.service_name}</h6>
+            <h6 class="card-title fw-bold">${service.service_name}</h6>
             <p class="card-text text-muted small">${service.description.substring(0, 100)}...</p>
             <div class="service-details">
                 <p><i class="bi bi-geo-alt-fill"></i> <small>${service.address}</small></p>
@@ -63,11 +70,10 @@ function createServiceCard(service) {
                 <p><i class="bi bi-envelope-fill"></i> <small>${service.email}</small></p>
             </div>
             <div class="service-types">
-                ${service.tipo.map(t => `<span class="badge bg-info">${t}</span>`).join(' ')}
+                ${service.tipo.map(t => `<span class="badge">${t}</span>`).join('')}
             </div>
         </div>
     `;
     
-    col.appendChild(card);
-    return col;
+    return card;
 }
