@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Solo aplica a elementos dentro de body, NO al navbar */
+body > * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #f0f4ff 100%);
+    overflow-x: hidden;
+}
+
+/* Proteger navbar de los estilos de ventajas */
+#navbar,
+#navbar * {
+    font-family: 'Montserrat', sans-serif;
+    /* No sobrescribir estilos del navbar */
+}
+
+/* ===== TÍTULO PRINCIPAL (SOLO VENTAJAS) ===== */
+/* Usar selector más específico para NO afectar el navbar */
+.proposito-card + .div_ventajas_images + .beneficios-container ~ #frase,
+body > p#frase {
+    font-size: 2.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, #40a0f1 0%, #12b2f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 2rem 1rem;
+    letter-spacing: 2px;
+}
+
+/* ===== SECCIÓN PROPÓSITO ===== */
+.proposito-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(64, 160, 241, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(64, 160, 241, 0.15);
+    transition: all 0.3s ease;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.proposito-card:hover {
+    box-shadow: 0 16px 48px rgba(64, 160, 241, 0.25);
+    transform: translateY(-4px);
+    border-color: rgba(64, 160, 241, 0.4);
+}
+
+.proposito-card .card-body {
+    padding: 3rem 2rem;
+}
+
+.proposito-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #12b2f0;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.proposito-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+}
+
+/* ===== GALERÍA DE VENTAJAS ===== */
+.div_ventajas_images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px;
+    margin: 3rem auto;
+}
+
+.ventajas_images {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(64, 160, 241, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(64, 160, 241, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.ventajas_images:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 16px 40px rgba(18, 178, 240, 0.3);
+    border-color: rgba(64, 160, 241, 0.3);
+}
+
+.ventajas_images .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.ventajas_images:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.ventajas_images .card-body {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ventajas_images .card-text {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* ===== SECCIÓN BENEFICIOS ===== */
+.beneficios-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.card-beneficio {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(64, 160, 241, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(64, 160, 241, 0.15);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.card-beneficio:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(64, 160, 241, 0.25);
+    border-color: rgba(64, 160, 241, 0.4);
+}
+
+.card-beneficio .card-body {
+    padding: 2rem;
+}
+
+.video-beneficio-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.videosGifsBeneficios {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(64, 160, 241, 0.2);
+    transition: all 0.3s ease;
+}
+
+.card-beneficio:hover .videosGifsBeneficios {
+    transform: scale(1.05);
+}
+
+.card-beneficio-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #40a0f1 0%, #12b2f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 1rem 0;
+    letter-spacing: 2px;
+}
+
+.card-beneficio-desc {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.beneficio-list {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    color: #555;
+}
+
+.beneficio-list strong {
+    color: #12b2f0;
+    font-weight: 700;
+}
+
+.beneficio-list .icono {
+    font-size: 1.2em;
+    margin-right: 0.5em;
+    color: #40a0f1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    #frase {
+        font-size: 2.5rem;
+    }
+
+    .proposito-card .card-body {
+        padding: 2rem;
+    }
+
+    .proposito-card h3 {
+        font-size: 1.7rem;
+    }
+
+    .proposito-card p {
+        font-size: 1rem;
+    }
+
+    .div_ventajas_images {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .ventajas_images .card-img-top {
+        height: 180px;
+    }
+
+    .beneficios-container {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .card-beneficio {
+        max-width: 320px;
+    }
+
+    .card-beneficio-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #frase {
+        font-size: 2rem;
+        margin: 1.5rem 0.5rem;
+    }
+
+    .proposito-card {
+        margin: 1.5rem 0.5rem;
+    }
+
+    .proposito-card .card-body {
+        padding: 1.5rem;
+    }
+
+    .proposito-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .proposito-card p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .div_ventajas_images {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+
+    .ventajas_images .card-img-top {
+        height: 150px;
+    }
+
+    .ventajas_images .card-text {
+        font-size: 0.95rem;
+    }
+
+    .beneficios-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+
+    .card-beneficio {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .card-beneficio-title {
+        font-size: 1.4rem;
+    }
+
+    .card-beneficio-desc {
+        font-size: 0.95rem;
+    }
+
+    .beneficio-list {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 480px) {
+    #frase {
+        font-size: 1.6rem;
+        margin: 1rem 0.5rem;
+    }
+
+    .proposito-card {
+        margin: 1rem 0.5rem;
+    }
+
+    .proposito-card .card-body {
+        padding: 1rem;
+    }
+
+    .proposito-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .proposito-card p {
+        font-size: 0.9rem;
+    }
+
+    .div_ventajas_images {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .ventajas_images .card-img-top {
+        height: 120px;
+    }
+
+    .ventajas_images .card-text {
+        font-size: 0.9rem;
+    }
+
+    .beneficios-container {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .card-beneficio {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .card-beneficio .card-body {
+        padding: 1.5rem 1rem;
+    }
+
+    .card-beneficio-title {
+        font-size: 1.2rem;
+    }
+
+    .card-beneficio-desc {
+        font-size: 0.9rem;
+    }
+
+    .videosGifsBeneficios {
+        max-width: 250px;
+    }
+
+    .beneficio-list {
+        font-size: 0.85rem;
+    }
+}
