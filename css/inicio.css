@@ -41,6 +41,8 @@ body {
     height: 400px;
     object-fit: cover;
     transition: transform 0.5s ease;
+    display: block;
+    width: 100%;
 }
 
 .carousel-item:hover .image_carrusel {
@@ -69,20 +71,38 @@ body {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
+/* ===== FLECHAS DEL CARRUSEL - CENTRADAS ===== */
 .carousel-control-prev,
 .carousel-control-next {
     width: 50px;
     height: 50px;
     background: rgba(64, 160, 241, 0.3);
     border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    bottom: auto !important;
     transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: 20px !important;
+}
+
+.carousel-control-next {
+    right: 20px !important;
 }
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     background: rgba(64, 160, 241, 0.6);
+    transform: translateY(-50%) scale(1.1) !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 24px;
+    height: 24px;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -339,6 +359,12 @@ section #frase {
     .slogan-title {
         font-size: 2.2rem;
     }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 45px;
+        height: 45px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -372,6 +398,20 @@ section #frase {
 
     .video-container {
         padding: 1rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-control-prev {
+        left: 10px !important;
+    }
+
+    .carousel-control-next {
+        right: 10px !important;
     }
 }
 
@@ -415,5 +455,19 @@ section #frase {
     .button-download {
         padding: 0.8rem 1.5rem;
         font-size: 1rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 35px;
+        height: 35px;
+    }
+
+    .carousel-control-prev {
+        left: 5px !important;
+    }
+
+    .carousel-control-next {
+        right: 5px !important;
     }
 }
